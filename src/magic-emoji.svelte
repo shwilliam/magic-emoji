@@ -17,8 +17,8 @@
     return topResult ? topResult.refIndex : -1
   }
 
-  export let label = 'question'
-  $: emojiIdx = findEmoji(label)
+  export let text = 'question'
+  $: emojiIdx = findEmoji(text)
   $: emoji = emojiEntries[emojiIdx][0]
   $: emojiDescription = emojiEntries[emojiIdx][1].description
 </script>
