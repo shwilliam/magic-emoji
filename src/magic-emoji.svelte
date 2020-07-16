@@ -2,14 +2,15 @@
 
 <script>
   import EMOJI from './emoji.json'
+  // reference: https://github.com/muan/unicode-emoji-json
 
   const findEmoji = (query) => {
     const result = Object.entries(EMOJI)
-      .find(([name]) => name.includes(label.toLowerCase()))
-    return result ? result[1] : '❓'
+      .find(([emoji, emojiObj]) => emojiObj.description.includes(label.toLowerCase()))
+    return result ? result[0] : '❓'
   }
 
-  const fuzzyFind = (string, query, ratio = 0.5) => {
+  const fuzzyFind = (string, query, ratio = 0.8) => {
     const stringLower = string.toLowerCase()
     const queryLower = query.toLowerCase()
 
