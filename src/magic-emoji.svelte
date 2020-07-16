@@ -17,10 +17,13 @@
     return topResult ? topResult.refIndex : -1
   }
 
+  // fall back to question mark
   export let text = 'question'
-  $: emojiIdx = findEmoji(text)
-  $: emoji = emojiEntries[emojiIdx][0]
-  $: emojiDescription = emojiEntries[emojiIdx][1].description
+  export let icon = ''
+
+  $: emojiIdx = icon ? null : findEmoji(text)
+  $: emoji = icon || emojiEntries[emojiIdx][0]
+  $: emojiDescription = (EMOJI[icon] || emojiEntries[emojiIdx][1]).description
 </script>
 
 <span
