@@ -8,6 +8,8 @@
   "author": "William L",
   "license": "MIT",
   "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "svelte"
@@ -17,6 +19,11 @@
     "dist"
   ],
   "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^6.0.0",
+    "rollup": "^1.20.0",
+    "rollup-plugin-svelte": "^5.0.0",
+    "svelte": "^3.0.0"
   },
   "repository": {
     "type": "git",
