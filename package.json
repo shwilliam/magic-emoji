@@ -1,17 +1,20 @@
 {
   "name": "magic-emoji",
-  "description": "",
+  "description": "Experimental web component for displaying accessible Emoji",
   "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "svelte": "src/index.js",
-  "author": "William L",
+  "author": "William Lindvall <shwilliam@hey.com>",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
+    "emoji",
+    "web-component",
+    "experimental",
     "svelte"
   ],
   "files": [
