@@ -1,0 +1,29 @@
+{
+  "name": "magic-emoji",
+  "description": "",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "svelte": "src/index.js",
+  "author": "William L",
+  "license": "MIT",
+  "scripts": {
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "files": [
+    "src",
+    "dist"
+  ],
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shwilliam/magic-emoji.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shwilliam/magic-emoji/issues"
+  },
+  "homepage": "https://github.com/shwilliam/magic-emoji#readme"
+}
