@@ -9,7 +9,10 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "dev": "parcel index.html",
+    "test": "cypress run --headless",
+    "test:open": "cypress open"
   },
   "keywords": [
     "emoji",
@@ -27,6 +30,8 @@
   "devDependencies": {
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^6.0.0",
+    "cypress": "^4.11.0",
+    "parcel": "^1.12.4",
     "rollup": "^1.20.0",
     "rollup-plugin-svelte": "^5.0.0",
     "svelte": "^3.0.0"
