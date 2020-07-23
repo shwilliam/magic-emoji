@@ -4,18 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>&lt;magic-emoji&gt;</title>
-    <script type="module" src="https://unpkg.com/magic-emoji@latest"></script>
+    <!-- <script type="module" src="https://unpkg.com/magic-emoji@latest"></script> -->
+    <script src="./dist/index.js"></script>
   </head>
   <body>
     <h1><code>&lt;magic-emoji&gt;</code></h1>
 
     <ul>
       <li>
-        <magic-emoji text="bloop" icon="🚀"></magic-emoji>
+        <magic-emoji
+          text="a magic rocket"
+          icon="🚀"
+        ></magic-emoji>
       </li>
       <li>
-        <magic-emoji text="bug"></magic-emoji>
+        <magic-emoji icon="🦄"></magic-emoji>
       </li>
     </ul>
+
+    <magic-emoji data-testid hidden></magic-emoji>
   </body>
 </html>
