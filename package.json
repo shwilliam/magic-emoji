@@ -1,5 +1,5 @@
 {
-  "name": "magic-emoji",
+  "name": "@shwilliam/magic-emoji",
   "description": "Experimental web component for displaying accessible Emoji",
   "version": "0.1.0",
   "main": "dist/index.js",
@@ -34,6 +34,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shwilliam/magic-emoji.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/shwilliam"
   },
   "bugs": {
     "url": "https://github.com/shwilliam/magic-emoji/issues"
