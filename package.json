@@ -34,7 +34,7 @@
     "parcel": "^1.12.4",
     "rollup": "^1.20.0",
     "rollup-plugin-svelte": "^5.0.0",
-    "svelte": "^3.0.0"
+    "svelte": "^3.49.0"
   },
   "repository": {
     "type": "git",
